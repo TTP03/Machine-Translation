@@ -1,7 +1,9 @@
+
+cd Machine-Translation
+
 ### install dependencies
 pip install -r requirements.txt
 
-cd Machine-Translation
 
 ### Preprocess data
 python preprocess.py
