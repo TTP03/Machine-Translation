@@ -75,4 +75,4 @@ test_file_en = 'data/test_en.txt'
 test_file_vi = 'data/test_vi.txt'
 
 # Split the dataset
-split_dataset(input_file_en, input_file_vi, train_file_en, train_file_vi, val_file_en, val_file_vi, test_file_en, test_file_vi, train_ratio=0.8, val_ratio=0.1, test_ratio=0.1, seed=42)
+split_dataset(input_file_en, input_file_vi, train_file_en, train_file_vi, val_file_en, val_file_vi, test_file_en, test_file_vi, train_ratio=0.96, val_ratio=0.02, test_ratio=0.02, seed=42)
