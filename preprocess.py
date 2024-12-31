@@ -15,15 +15,14 @@ def clean_dataset(file_path, output_path, language="en"):
             line = re.sub(r'[^\w\s.,!?]', '', line)  # Giữ dấu câu cơ bản
             line = line.strip().lower()  # Chuyển thành chữ thường
 
-            if line:  # Bỏ qua dòng trống
                 # Token hóa
-                if language == "english":
-                    words = word_tokenize(line, language="english")
-                else:  # Tiếng Việt (token hóa cơ bản)
-                    words = line.split()
+            if language == "english":
+                words = word_tokenize(line, language="english")
+            else:  # Tiếng Việt (token hóa cơ bản)
+                words = line.split()
 
                 # Ghi lại câu
-                outfile.write(' '.join(words) + '\n')
+            outfile.write(' '.join(words) + '\n')
 
 # File paths
 en_input_path = 'data/en.txt'
